@@ -22,6 +22,7 @@ const io = new Server(server, {
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:5173",
+      "https://freelancehubfrontend.vercel.app"
     ],
     credentials: true,
   },
@@ -37,6 +38,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:3001",
       "http://localhost:5173",
+      "https://freelancehubfrontend.vercel.app"
     ],
     credentials: true,
   })
