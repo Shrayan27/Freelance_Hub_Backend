@@ -28,7 +28,7 @@ export const uploadImage = async (req, res, next) => {
     // Check if Cloudinary is configured
     if (!cloudinaryConfigured) {
       // For development, return a local file path as fallback
-      const localUrl = `http://localhost:8800/uploads/${req.file.filename}`;
+      const localUrl = `https://freelance-hub-backend-deployment.onrender.com/uploads/${req.file.filename}`;
       return res.status(200).send({ url: localUrl });
     }
 
